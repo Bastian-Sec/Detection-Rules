@@ -1,1 +1,15 @@
 
+---
+
+## **2. `snort/_TEMPLATE.rules`**
+```snort
+# Name: <Rule descriptive name>
+# Description: <Short and precise description of what this rule detects>
+# Topic: <IP | Ports | DNS | HTTP>
+# Severity: <low | medium | high | critical>
+# Refs: <https://reference.link>
+# Author: Bastian-Sec
+# Date: YYYY-MM-DD
+
+alert <proto> <src_net> <src_port> -> <dst_net> <dst_port> (msg:"<Short message>"; sid:<unique_id>; rev:1; classtype:<class>; priority:<1-4>;)
+
