@@ -1,1 +1,27 @@
 
+
+---
+
+## **6. `yara/_TEMPLATE.yar`**
+```yara
+// Name: <Rule descriptive name>
+// Description: <Short and precise description of what this rule detects>
+// Topic: <IP | Ports | DNS | HTTP>
+// Severity: <low | medium | high | critical>
+// Refs: <https://reference.link>
+// Author: Bastian-Sec
+// Date: YYYY-MM-DD
+
+rule <rule_name> {
+    meta:
+        name = "<Rule descriptive name>"
+        topic = "<IP | Ports | DNS | HTTP>"
+        severity = "<low | medium | high | critical>"
+        refs = "<https://reference.link>"
+        author = "Bastian-Sec"
+        date = "YYYY-MM-DD"
+    strings:
+        $pattern = "<string or hex pattern>"
+    condition:
+        $pattern
+}
