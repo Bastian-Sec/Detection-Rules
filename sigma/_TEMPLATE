@@ -1,1 +1,28 @@
 
+
+---
+
+## **8. `sigma/_TEMPLATE.yml`**
+```yaml
+title: <Rule descriptive name>
+description: <Short and precise description>
+status: experimental
+level: <low | medium | high | critical>
+author: Bastian-Sec
+date: YYYY-MM-DD
+references:
+  - <https://reference.link>
+tags:
+  - topic:<IP | Ports | DNS | HTTP>
+
+logsource:
+  product: <windows | linux | any>
+  service: <service_name>
+
+detection:
+  selection:
+    <FieldName>: <Value>
+  condition: selection
+
+falsepositives:
+  - <Known benign cases>
